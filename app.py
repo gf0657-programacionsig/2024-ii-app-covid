@@ -240,6 +240,9 @@ folium.GeoJson(
 paleta_colores.caption = 'Casos totales por país'
 paleta_colores.add_to(mapa)
 
+# Agregar el control de capas al mapa
+folium.LayerControl().add_to(mapa)
+
 # Mostrar el mapa
 st.subheader('Mapa de casos totales por país')
 
